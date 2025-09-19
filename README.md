@@ -52,7 +52,7 @@ The model is composed of three main transformer-based stages, following the arch
 Install via pip:
 
 ```bash
-pip install torch pytorch-lightning
+pip install -r requirements.txt
 ````
 
 ---
