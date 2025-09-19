@@ -1,0 +1,8 @@
+# requirements.txt
+torch
+pytorch-lightning
+pandas
+numpy
+scikit-learn
+requests
+openml-python

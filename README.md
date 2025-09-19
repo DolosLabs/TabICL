@@ -39,6 +39,7 @@ The model is composed of three main transformer-based stages, following the arch
   - Core components (`SetTransformer`, `RowInteractionTransformer`, `ICLTransformer`)
   - Main `TabICL` LightningModule (orchestrates training/logic)
   - Example `if __name__ == "__main__":` block with dummy data
+- **`train.py`** – example training script using PyTorch Lightning.
 
 ---
 
@@ -58,7 +59,23 @@ pip install torch pytorch-lightning
 
 ## 🚀 Usage
 
-### 1. Model Initialization
+### 1. Quickstart with `train.py`
+
+Run the provided training script:
+
+```bash
+python train.py
+```
+
+This will:
+
+* Initialize a `TabICL` model with default configs.
+* Generate dummy data (`x_train`, `y_train`, `x_test`, `y_test`).
+* Train the model for a few epochs using PyTorch Lightning.
+
+---
+
+### 2. Model Initialization (Manual)
 
 ```python
 from tabicl_lightning import TabICL
@@ -91,7 +108,7 @@ print(model)
 
 ---
 
-### 2. Data Preparation
+### 3. Data Preparation
 
 The model expects data in the following format:
 
@@ -116,7 +133,7 @@ x_test_dummy  = torch.randn(batch_size, n_test_samples, n_features)
 
 ---
 
-### 3. Forward Pass (Inference)
+### 4. Forward Pass (Inference)
 
 ```python
 # --- Run a forward pass ---
@@ -129,7 +146,7 @@ print("Output logits shape:", logits_output.shape)
 
 ---
 
-### 4. Training
+### 5. Training (Custom)
 
 To train the model, use the **PyTorch Lightning Trainer**.
 You’ll need a DataLoader that yields `(x_train, y_train, x_test, y_test)`.
