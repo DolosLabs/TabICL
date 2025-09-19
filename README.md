@@ -34,7 +34,7 @@ The model is composed of three main transformer-based stages, following the arch
 
 ## 📂 File Structure
 
-- **`tabicl_lightning.py`** – contains everything:
+- **`TabICL.py`** – contains everything:
   - Helper modules (`RotaryPositionalEmbedding`, `MAB`, `ISAB`)
   - Core components (`SetTransformer`, `RowInteractionTransformer`, `ICLTransformer`)
   - Main `TabICL` LightningModule (orchestrates training/logic)
