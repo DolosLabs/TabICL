@@ -38,7 +38,6 @@ The model is composed of three main transformer-based stages, following the arch
   - Helper modules (`RotaryPositionalEmbedding`, `MAB`, `ISAB`)
   - Core components (`SetTransformer`, `RowInteractionTransformer`, `ICLTransformer`)
   - Main `TabICL` LightningModule (orchestrates training/logic)
-  - Example `if __name__ == "__main__":` block with dummy data
 - **`train.py`** – example training script using PyTorch Lightning.
 
 ---
