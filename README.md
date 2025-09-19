@@ -4,7 +4,7 @@ This repository contains a **PyTorch Lightning** implementation of the **TabICL*
 
 > Qu et al. (2025), *"TabICL: A Tabular Foundation Model for In-Context Learning on Large Data"*.
 
-The implementation is self-contained within **`tabicl_lightning.py`** for ease of use.
+The implementation is self-contained within **`TabICL.py`** for ease of use.
 
 ---
 
